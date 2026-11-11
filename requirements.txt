@@ -1,4 +1,4 @@
-
 PyMuPDF==2.1
 pandas==3.1.0
 openpyxl==3.1.5
+streamlit==1.67.0
