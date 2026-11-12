@@ -14,8 +14,10 @@ st.set_page_config(
 
 st.markdown("""
 <style>
-.stApp {
-    background: #EAF4FF;
+.stApp,
+[data-testid="stAppViewContainer"] {
+    background: #EAF4FF !important;
+}
 }
 }
 .block-container {
