@@ -15,7 +15,8 @@ st.set_page_config(
 st.markdown("""
 <style>
 .stApp {
-    background: #ffffff;
+    background: #EAF4FF;
+}
 }
 .block-container {
     max-width: 1200px;
