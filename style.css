@@ -1,0 +1,181 @@
+
+/* =====================================
+   DIT-P11 - UNIQUE BLUE LAVENDER THEME
+===================================== */
+
+/* Main Website Background */
+.stApp,
+[data-testid="stAppViewContainer"] {
+    background: linear-gradient(
+        135deg,
+        #EAF4FF 0%,
+        #F2F0FF 50%,
+        #E6FAF8 100%
+    ) !important;
+    background-image: none !important;
+}
+
+/* Main Container */
+.block-container {
+    max-width: 1200px;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+/* Header */
+header[data-testid="stHeader"] {
+    background: transparent !important;
+}
+
+/* Project ID */
+.project-id {
+    color: #5145CD;
+    font-size: 15px;
+    font-weight: 800;
+    text-align: right;
+    padding-top: 15px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(
+        120deg,
+        #DCEBFF,
+        #E8E1FF,
+        #D9F5F1
+    );
+    border: 1px solid #CFDDF5;
+    border-radius: 20px;
+    padding: 60px 25px;
+    text-align: center;
+    margin: 25px 0 35px 0;
+    box-shadow: 0 8px 25px rgba(55, 80, 140, 0.08);
+}
+
+.hero-tag {
+    color: #5145CD;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    color: #243B75;
+    font-size: 42px;
+    font-weight: 800;
+    margin: 22px 0 15px 0;
+}
+
+.hero p {
+    color: #52647F;
+    font-size: 16px;
+}
+
+/* Upload Section */
+.upload-title {
+    color: #20345E;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.upload-subtitle {
+    color: #687B99;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* PDF Uploader */
+div[data-testid="stFileUploader"] {
+    background: #F8FBFF;
+    border: 2px dashed #8CA9E8;
+    border-radius: 14px;
+    padding: 18px;
+}
+
+/* Buttons */
+.stButton > button,
+.stDownloadButton > button {
+    background: linear-gradient(100deg, #5145CD, #287EAD);
+    color: #FFFFFF !important;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 25px;
+    font-weight: 700;
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+.stButton > button:hover,
+.stDownloadButton > button:hover {
+    background: linear-gradient(100deg, #382DA8, #176A91);
+    color: #FFFFFF !important;
+    transform: translateY(-2px);
+}
+
+/* Team Heading */
+.team-heading {
+    background: linear-gradient(100deg, #243B75, #287EAD);
+    color: white;
+    padding: 16px 20px;
+    border-radius: 10px;
+    font-size: 21px;
+    font-weight: 700;
+    margin-top: 45px;
+    margin-bottom: 15px;
+}
+
+/* Team Card */
+.team-card {
+    background: #FFFFFF;
+    border: 1px solid #D8E4F3;
+    border-radius: 12px;
+    padding: 15px 25px;
+    box-shadow: 0 5px 18px rgba(40, 65, 110, 0.08);
+}
+
+.team-member {
+    color: #263B5C;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 13px 5px;
+    border-bottom: 1px solid #E8EEF7;
+}
+
+.team-member:last-child {
+    border-bottom: none;
+}
+
+/* Metrics */
+[data-testid="stMetric"] {
+    background: #FFFFFF;
+    border: 1px solid #D9E5F5;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 4px 12px rgba(40, 65, 110, 0.06);
+}
+
+/* Expanders */
+[data-testid="stExpander"] {
+    background: #FFFFFF;
+    border: 1px solid #D8E4F3;
+    border-radius: 12px;
+}
+
+/* Dataframes */
+[data-testid="stDataFrame"] {
+    border: 1px solid #D8E4F3;
+    border-radius: 10px;
+}
+
+/* Text Areas */
+.stTextArea textarea {
+    background: #F8FBFF;
+    color: #263B5C;
+    border: 1px solid #C9D8ED;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    visibility: hidden;
+}

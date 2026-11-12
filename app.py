@@ -10,112 +10,14 @@ st.set_page_config(
     layout="wide"
 )
 
-# -------------------- DESIGN --------------------
+# -------------------- LOAD EXTERNAL CSS --------------------
 
-st.markdown("""
-<style>
-.stApp,
-[data-testid="stAppViewContainer"] {
-    background: #EAF4FF !important;
-}
-}
-}
-.block-container {
-    max-width: 1200px;
-    padding-top: 1.5rem;
-    padding-bottom: 2rem;
-}
-header[data-testid="stHeader"] {
-    background: transparent;
-}
-.project-id {
-    color: #5b5bd6;
-    font-size: 15px;
-    font-weight: 700;
-    text-align: right;
-    padding-top: 15px;
-}
-.hero {
-    background: linear-gradient(120deg, #eef1ff, #f5edff);
-    border-radius: 18px;
-    padding: 60px 25px;
-    text-align: center;
-    margin: 25px 0 35px 0;
-}
-.hero-tag {
-    color: #6266e9;
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 3px;
-}
-.hero h1 {
-    color: #6268e8;
-    font-size: 42px;
-    font-weight: 800;
-    margin: 22px 0 15px 0;
-}
-.hero p {
-    color: #64748b;
-    font-size: 16px;
-}
-.upload-title {
-    color: #172554;
-    font-size: 24px;
-    font-weight: 800;
-}
-.upload-subtitle {
-    color: #7c849b;
-    font-size: 14px;
-    margin-bottom: 15px;
-}
-div[data-testid="stFileUploader"] {
-    background: #f9faff;
-    border: 1px dashed #bfc7ff;
-    border-radius: 12px;
-    padding: 15px;
-}
-.stButton > button {
-    background: #6268e8;
-    color: white;
-    border: none;
-    border-radius: 9px;
-    padding: 12px 25px;
-    font-weight: 700;
-    width: 100%;
-}
-.stButton > button:hover {
-    background: #4e54ce;
-    color: white;
-}
-.team-heading {
-    background: #204f78;
-    color: white;
-    padding: 15px 20px;
-    border-radius: 8px;
-    font-size: 21px;
-    font-weight: 700;
-    margin-top: 45px;
-    margin-bottom: 15px;
-}
-.team-card {
-    background: #ffffff;
-    border: 1px solid #e1e6ed;
-    border-radius: 10px;
-    padding: 15px 25px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.04);
-}
-.team-member {
-    color: #26384b;
-    font-size: 16px;
-    font-weight: 600;
-    padding: 13px 5px;
-    border-bottom: 1px solid #edf0f4;
-}
-.team-member:last-child {
-    border-bottom: none;
-}
-</style>
-""", unsafe_allow_html=True)
+with open("style.css", "r", encoding="utf-8") as css_file:
+    st.markdown(
+        f"<style>{css_file.read()}</style>",
+        unsafe_allow_html=True
+    )
+
 
 # -------------------- HEADER --------------------
 
